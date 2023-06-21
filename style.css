@@ -23,6 +23,8 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1;
+	color: #464646;
+	line-height: 1.5;
 }
 ol,
 ul,
@@ -51,12 +53,10 @@ https://en.bem.info/methodology/quick-start/*/
 section.menu {
 	display: flex;
 	padding: 15px;
-	background-color: rgb(190, 189, 189)
-	background-repeat: repeat;
 }
 .menu__title {
 	font-size: 1rem;
-	margin: 10px;
+	margin: 5px;
 }
 .menu__header,
 .menu__list {
@@ -76,11 +76,7 @@ section.menu {
 	border-radius: 50%;
 }
 section.title {
-	margin: 12px;
-	background-color: rgb(190, 189, 189)
-	background-repeat: repeat;
-	margin: 0;
-	padding: 0;
+	margin: 5px;
 }
 .title__div {
 	padding: 15px;
@@ -90,17 +86,49 @@ section.title {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 10px;
-	
 }
 /*Sección About*/
 
 section.about {
-	background-color: #EAF2FD;
+	background-color: #eaf2fd;
+	padding: 12px;
+}
+
+/*sección skills*/
+.skills__title {
+	text-align: center;
+}
+.skills__line {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.skills__box {
+	width: 42%;
+	height: 118px;
+	margin: 15px;
+	border-radius: 2px;
+	background-color: white;
+	display: flex;
+	align-items: end;
 }
 
 /*Sección Hobbies*/
-
-section.hobbies {
+.hobbies__title {
+	text-align: center;
+}
+.hobbies__line {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.hobbies__box {
+	width: 42%;
+	margin: 15px;
+	border-radius: 2px;
+	background-color: white;
+	display: flex;
+	align-items: end;
 }
 
 /* Experiencia Académica*/
