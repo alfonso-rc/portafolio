@@ -24,7 +24,7 @@ body {
 	padding: 0;
 	line-height: 1;
 	color: #464646;
-	line-height: 1.5;
+	line-height: 1.2;
 }
 ol,
 ul,
@@ -71,6 +71,10 @@ section.menu {
 	display: block;
 	align-items: center;
 }
+.title__sub {
+	display: flex;
+	justify-content: center;
+}
 /*Sección Title*/
 .title__profile {
 	border-radius: 50%;
@@ -90,7 +94,7 @@ section.title {
 /*Sección About*/
 
 section.about {
-	background-color: #eaf2fd;
+	background-color: #d5e4f8;
 	padding: 12px;
 }
 
@@ -104,9 +108,9 @@ section.about {
 	justify-content: center;
 }
 .skills__box {
-	width: 42%;
+	width: 40%;
 	height: 118px;
-	margin: 15px;
+	margin: 14px;
 	border-radius: 2px;
 	background-color: white;
 	display: flex;
@@ -123,8 +127,8 @@ section.about {
 	justify-content: center;
 }
 .hobbies__box {
-	width: 42%;
-	margin: 15px;
+	width: 40%;
+	margin: 14px;
 	border-radius: 2px;
 	background-color: white;
 	display: flex;
@@ -132,23 +136,126 @@ section.about {
 }
 
 /* Experiencia Académica*/
-
-section.academic {
+.academic {
+	background-color: #d5e4f8;
+	padding: 5px;
+}
+.academic__title {
+	display: flex;
+	border: 5px;
+	justify-content: center;
+}
+.academic__courses {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.academic__courses__list {
+	padding: 0 5px;
+	width: 90%;
+}
+.academic__courses__box {
+	width: 90%;
+	padding: 0 10px;
+	line-height: 1;
+}
+.academic__courses__item__img {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	border-radius: 8px;
 }
 
 /* experiencia*/
-
-section.experience {
+.experience {
+	margin: 15px;
 }
 
+.experience__section__title {
+	padding-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+.experiencie__box {
+	max-width: 100%;
+	height: auto;
+	margin: 25px 0;
+	border-radius: 5px;
+}
+.experience__img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.experience__botao--demo,
+.experiencia__botao--repo {
+	width: 35%;
+	height: auto;
+	padding: 15px;
+	border-radius: 2px;
+	justify-content: flex-start;
+}
+
+.experiencia__botao--repo {
+	color: #2a7ae4;
+	border-color: #2a7ae4;
+	margin: 10px;
+}
+.experience__botao--demo {
+	background-color: #2a7ae4;
+	border-color: #2a7ae4;
+	color: white;
+	margin: 10px;
+}
 /*Contacto*/
-
-section.formcontato {
+.formcontato {
+	background-color: #d5e4f8;
+	margin-top: 25px;
+}
+.formcontato__text {
+	margin: 10px;
+}
+.formcontato__img {
+	width: 100%;
+	height: auto;
+}
+.formcontato__input {
+	width: 95%;
+	height: 56px;
+	margin: 10px 0;
+	border: none;
+}
+.formcontato__input {
+	position: relative;
+	color: #464646;
+}
+.formcontato__input:focus,
+.formcontato__textarea:focus {
+	border-bottom: 2px solid #2a7ae4;
+	outline: none;
+}
+.formcontato__input::placeholder {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.formcontato__textarea {
+	width: 95%;
+	height: 100px;
+	border: none;
 }
 
+.formcontato__botao {
+	background-color: #2a7ae4;
+	border-color: #2a7ae4;
+	color: white;
+	margin: 10px 0;
+	padding: 15px;
+}
 /*footeer*/
-
-section.footer {
+.footer {
+	margin: 40px 0;
+	text-align: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
