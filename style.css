@@ -17,8 +17,8 @@ coloque nas sessões indicadas*/
 }
 
 body {
-	box-sizing: border-box;
 	background-color: var(--cor-de-fundo);
+	box-sizing: border-box;
 	font-family: "Raleway";
 	margin: 0;
 	padding: 0;
@@ -95,6 +95,7 @@ section.title {
 
 section.about {
 	background-color: #d5e4f8;
+	box-sizing: border-box;
 	padding: 12px;
 }
 
@@ -263,36 +264,139 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
 @media (min-width: 768px) {
+	body {
+		margin: 15px 0;
+		padding: 0;
+	}
 	/* Menú */
+	.menu__list {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.menu__list__item {
+		box-sizing: border-box;
+	}
+	.menu__header {
+		width: 40%;
+	}
 
 	/*title*/
-
-	/*Skills*/
-
-	/*Hobbies*/
-
-	/*Formación Académica*/
-
-	/*Experiencia Profesional*/
+	.title__div {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.title__container {
+	justify-content: start;
+}
+.title__profile {
+	margin: 35px;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
 }
 
+/*Skills*/
+.skills__title {
+	margin-top: 50px;
+}
+.skills__box {
+	width: 30%;
+	margin: 10px;
+}
+.title__sub {
+	justify-content: start;
+}
+/*Hobbies*/
+.hobbies__title {
+	margin-top: 50px;
+}
+.hobbies__box {
+	width: 30%;
+	margin: 10px;
+}
+.hobbies__line {
+	margin-bottom: 50px;
+}
+
+/*Formación Académica*/
+.academic__courses__box {
+	width: 45%;
+}
+
+/*Experiencia Profesional*/
+
 /*Mobile*/
-@media (min-width: 425px) {
-	/*Menu*/
+@media (min-width: 1200px) {
+	body {
+		background-color: var(--cor-de-fundo);
+		margin: 0 auto;
+		max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+	}
+	.menu__list {
+		margin: 0 25px;
+	}
+	.about {
+		background-color: #2a7ae4;
+		margin: 0;
+		max-width: 1200px;
+	}
 
-	/*Titulo*/
+	/* Skills */
+	.skills__title {
+		margin-top: 50px;
+	}
+	.skills__line {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.skills__box {
+		flex-grow: 1;
+		width: 14%;
+		margin: 8px;
+	}
 
-	/*Sección sobre mi*/
+	/* Hobbies */
+	.hobbies__title {
+		margin-top: 50px;
+	}
 
-	/*Skills*/
+	.hobbies__line {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-	/*Hobbies*/
+	.hobbies__box {
+		flex-grow: 1;
+		width: 14%;
+		height: auto;
+		margin: 8px;
+	}
 
-	/*Formación Académica*/
-
-	/*Experiencia Profesional*/
-
-	/*Contacto*/
-
-	/*Footer*/
+	.experiencie__box {
+		display: flex;
+		width: 100%;
+	}
+	.experience__img {
+		width: 50%;
+		height: auto;
+	}
+	.experience__info {
+		width: 50%;
+	}
+	.experience__title {
+		display: flex;
+		justify-content: center;
+	}
+	.experience__text {
+		display: flex;
+		justify-content: center;
+	}
+	.experience__repo {
+		width: 100%;
+	}
 }
