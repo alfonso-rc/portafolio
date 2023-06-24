@@ -376,10 +376,15 @@ Utiliza las referencias de los breakpoints @media abajo */
 		height: auto;
 		margin: 8px;
 	}
-
+	.experience {
+		margin: 0px;
+	}
 	.experiencie__box {
 		display: flex;
-		width: 100%;
+		width: 98%;
+		margin-bottom: 50px;
+		border: solid #edeaea;
+		padding: 15px;
 	}
 	.experience__img {
 		width: 50%;
@@ -398,5 +403,35 @@ Utiliza las referencias de los breakpoints @media abajo */
 	}
 	.experience__repo {
 		width: 100%;
+	}
+	.experiencia__botao--repo {
+		width: 40%;
+		margin-left: 40px;
+	}
+	.experience__botao--demo {
+		width: 40%;
+		margin-left: 40px;
+	}
+	.experiencie__box:nth-child(3) {
+		flex-direction: row-reverse;
+	}
+	.formcontato {
+		padding-top: 20px;
+		padding-left: 20px;
+		width: 100%;
+	}
+	.formcontato__contacto {
+		width: 100%;
+		display: flex;
+	}
+	.formcontato--esquerda {
+		width: 40%;
+		display: flex;
+	}
+
+	.formcontato__text {
+		width: 50%;
+		padding-top: 10px;
+		padding-left: 20px;
 	}
 }
