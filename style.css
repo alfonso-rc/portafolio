@@ -245,8 +245,13 @@ section.about {
 	height: 100px;
 	border: none;
 }
-
-.formcontato__botao {
+.formcontato__botao[disabled] {
+  background-color: gray;
+  cursor: not-allowed;
+	margin: 10px 0;
+	padding: 15px;
+}
+.formcontato__botao:not([disabled]) {
 	background-color: #2a7ae4;
 	border-color: #2a7ae4;
 	color: white;
@@ -257,6 +262,16 @@ section.about {
 .footer {
 	margin: 40px 0;
 	text-align: center;
+}
+.formcontato__error {
+	color: red;
+	font-weight: bold;
+	text-align: end;
+	margin-top: 10px;
+}
+
+#trucazo{
+	opacity: 0;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
